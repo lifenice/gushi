@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"PPGo_ApiAdmin/libs"
-	"PPGo_ApiAdmin/models"
+	"./../libs"
+	"./../models"
 	"github.com/astaxie/beego"
 )
 

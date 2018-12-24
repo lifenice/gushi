@@ -6,7 +6,7 @@
 package controllers
 
 import (
-	"PPGo_ApiAdmin/models"
+	"./../models"
 	"fmt"
 	"github.com/astaxie/beego"
 	"time"

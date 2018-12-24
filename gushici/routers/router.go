@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"PPGo_ApiAdmin/controllers"
+	"./../controllers"
 	"github.com/astaxie/beego"
 )
 

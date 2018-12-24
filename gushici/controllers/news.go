@@ -12,7 +12,7 @@ import (
 
 	"github.com/astaxie/beego"
 
-	"PPGo_ApiAdmin/models"
+	"./../models"
 )
 
 type NewsController struct {
