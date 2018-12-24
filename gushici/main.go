@@ -4,7 +4,7 @@ import (
 	"./models"
 	_ "./routers"
 
-	"../beego"
+	"github.com/astaxie/beego"
 )
 
 func main() {
