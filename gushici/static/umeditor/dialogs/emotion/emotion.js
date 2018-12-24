@@ -69,7 +69,7 @@
             editor = _editor;
             this.widget = $widget;
 
-            emotion.SmileyPath = _editor.options.emotionLocalization === true ? emotionUrl + 'images/' : "http://img.baidu.com/hi/";
+            emotion.SmileyPath = _editor.options.emotionLocalization === true ? emotionUrl + 'images/' : "http://img.baidu.co../";
             emotion.SmileyBox = me.createTabList( emotion.tabNum );
             emotion.tabExist = me.createArr( emotion.tabNum );
 

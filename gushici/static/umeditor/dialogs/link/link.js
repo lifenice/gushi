@@ -18,11 +18,11 @@
             "<table class=\"edui-link-table\">" +
             "<tr>" +
             "<td><label for=\"href\"><%=lang_input_url%></label></td>" +
-            "<td><input class=\"edui-link-txt\" id=\"edui-link-Jhref\" type=\"text\" /></td>" +
+            "<td><input class=\"edui-link-txt\" id=\"edui-link-Jhref\" type=\"text\"../td>" +
             "</tr>" +
             "<tr>" +
             "<td><label for=\"title\"><%=lang_input_title%></label></td>" +
-            "<td><input class=\"edui-link-txt\" id=\"edui-link-Jtitle\" type=\"text\"/></td>" +
+            "<td><input class=\"edui-link-txt\" id=\"edui-link-Jtitle\" type=\"text\../td>" +
             "</tr>" +
             "<tr>" +
             "<td colspan=\"2\">" +

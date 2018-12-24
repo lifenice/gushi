@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"./../models"
+	"../models"
 	"github.com/astaxie/beego"
 )
 

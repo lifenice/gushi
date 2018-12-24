@@ -22,13 +22,13 @@
     "licenses": [
     {
       "type": "MIT",
-      "url": "http://www.ztree.me/v3/main.php#_license"
+      "url": "http://www.ztree.m../main.php#_license"
     }
     ],
     "bugs": "https://github.com/zTree/zTree_v3/issues",
     "homepage": "http://www.ztree.me/",
-    "demo": "http://www.ztree.me/v3/demo.php",
-    "docs": "http://www.ztree.me/v3/api.php",
+    "demo": "http://www.ztree.m../demo.php",
+    "docs": "http://www.ztree.m../api.php",
     "dependencies": {
       "jquery": ">=1.4.4"
     }

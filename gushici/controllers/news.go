@@ -12,7 +12,7 @@ import (
 
 	"github.com/astaxie/beego"
 
-	"./../models"
+	"../models"
 )
 
 type NewsController struct {

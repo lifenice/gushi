@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"./../models"
+	"../models"
 	"github.com/astaxie/beego"
 )
 
@@ -150,7 +150,7 @@ func (self *ApiController) Edit() {
 }
 
 // func (self *ApiController) Table() {
-// 	//列表
+..//列表
 // 	page, err := self.GetInt("page")
 // 	if err != nil {
 // 		page = 1
@@ -161,7 +161,7 @@ func (self *ApiController) Edit() {
 // 	}
 
 // 	self.pageSize = limit
-// 	//查询条件
+..//查询条件
 // 	filters := make([]interface{}, 0)
 // 	filters = append(filters, "status", 1)
 // 	result, count := models.ApiGetList(page, self.pageSize, filters...)
@@ -376,7 +376,7 @@ func (self *ApiController) AjaxApiSave() {
 	self.ajaxMsg("", MSG_OK)
 
 	// ApiUpdate, _ := models.ApiGetById(Api_id)
-	// // 修改
+..// 修改
 	// ApiUpdate.SourceName = strings.TrimSpace(self.GetString("source_name"))
 	// ApiUpdate.GroupId, _ = self.GetInt("group_id")
 	// ApiUpdate.UpdateId = self.userId

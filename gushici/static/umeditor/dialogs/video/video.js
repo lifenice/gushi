@@ -19,8 +19,8 @@
             "<fieldset>" +
             "<legend><%=lang_video_size%></legend>" +
             "<table>" +
-            "<tr><td><label for=\"eduiVideoWidth\"><%=lang_videoW%></label></td><td><input class=\"edui-video-txt\" id=\"eduiVideoWidth\" type=\"text\"/></td></tr>" +
-            "<tr><td><label for=\"eduiVideoHeight\"><%=lang_videoH%></label></td><td><input class=\"edui-video-txt\" id=\"eduiVideoHeight\" type=\"text\"/></td></tr>" +
+            "<tr><td><label for=\"eduiVideoWidth\"><%=lang_videoW%></label></td><td><input class=\"edui-video-txt\" id=\"eduiVideoWidth\" type=\"text\../td></tr>" +
+            "<tr><td><label for=\"eduiVideoHeight\"><%=lang_videoH%></label></td><td><input class=\"edui-video-txt\" id=\"eduiVideoHeight\" type=\"text\../td></tr>" +
             "</table>" +
             "</fieldset>" +
             "<fieldset>" +
@@ -97,7 +97,7 @@
                 $("#eduiVideoPreview", me.$widget).html( lang.urlError );
                 return;
             }
-            $("#eduiVideoPreview", me.$widget)[0].innerHTML = '<embed type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
+            $("#eduiVideoPreview", me.$widget)[0].innerHTML = '<embed type="application/x-shockwave-flash" pluginspage="http://www.macromedia.co../getflashplayer"' +
                 ' src="' + url + '"' +
                 ' width="' + 420  + '"' +
                 ' height="' + 280  + '"' +
@@ -132,7 +132,7 @@
             if ( !url ) return '';
             var matches = url.match(/youtu.be\/(\w+)$/) ||
                     url.match(/youtube\.com\/watch\?v=(\w+)/) ||
-                    url.match(/youtube.com\/v\/(\w+)/),
+                    url.match(/youtube.com../(\w+)/),
                 youku = url.match(/youku\.com\/v_show\/id_(\w+)/),
                 youkuPlay = /player\.youku\.com/ig.test(url);
 
@@ -148,7 +148,7 @@
                     .replace(/http:\/\/v\.youku\.com\/v_show\/id_([\w\-=]+)\.html/i, "http://player.youku.com/player.php/sid/$1")
                     .replace(/http:\/\/www\.56\.com\/u\d+\/v_([\w\-]+)\.html/i, "http://player.56.com/v_$1.swf")
                     .replace(/http:\/\/www.56.com\/w\d+\/play_album\-aid\-\d+_vid\-([^.]+)\.html/i, "http://player.56.com/v_$1.swf")
-                    .replace(/http:\/\/v\.ku6\.com\/.+\/([^.]+)\.html/i, "http://player.ku6.com/refer/$1/v.swf")
+                    .replace(/http:\/\/v\.ku6\.com\/.+\/([^.]+)\.html/i, "http://player.ku6.com/refe../v.swf")
                     .replace(/\?f=.*/, "");
             }
             return url;

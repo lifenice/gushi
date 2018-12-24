@@ -164,9 +164,9 @@ var manageTextarea = (function() {
   // except for 10: 'Enter', which I've empirically observed in Safari on iOS
   // and doesn't appear to conflict with any other known key codes.
   //
-  // [1]: http://www.w3.org/TR/2012/WD-DOM-Level-3-Events-20120614/#keys-keyvalues
-  // [2]: http://www.w3.org/TR/2012/WD-DOM-Level-3-Events-20120614/#fixed-virtual-key-codes
-  // [3]: http://unixpapa.com/js/key.html
+  // [1]: http://www.w3.or../2012/WD-DOM-Level-3-Events-20120614/#keys-keyvalues
+  // [2]: http://www.w3.or../2012/WD-DOM-Level-3-Events-20120614/#fixed-virtual-key-codes
+  // [3]: http://unixpapa.co../key.html
   var KEY_VALUES = {
     8: 'Backspace',
     9: 'Tab',
@@ -3202,7 +3202,7 @@ var latexMathParser = (function() {
   var symbol = regex(/^[^${}\\_^]/).map(VanillaSymbol);
 
   var controlSequence =
-    regex(/^[^\\a-eg-zA-Z]/) // hotfix #164; match MathBlock::write
+    regex(/^[^\\a-eg-zA-Z..// hotfix #164; match MathBlock::write
     .or(string('\\').then(
       regex(/^[a-z]+/i)
       .or(regex(/^\s+/).result(' '))

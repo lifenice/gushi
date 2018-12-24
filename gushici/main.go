@@ -4,7 +4,7 @@ import (
 	"./models"
 	_ "./routers"
 
-	"./../beego"
+	"../beego"
 )
 
 func main() {

@@ -8,8 +8,8 @@
 package controllers
 
 import (
-	"./../libs"
-	"./../models"
+	"../libs"
+	"../models"
 	"github.com/astaxie/beego"
 	"path"
 	"strconv"

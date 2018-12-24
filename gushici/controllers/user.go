@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"./../libs"
-	"./../models"
+	"../libs"
+	"../models"
 )
 
 type UserController struct {

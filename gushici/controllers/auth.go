@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"./../models"
+	"../models"
 )
 
 type AuthController struct {

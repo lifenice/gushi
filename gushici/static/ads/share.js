@@ -1,5 +1,5 @@
 (function() {
-  var wxapi = "//res.wx.qq.com/open/js/jweixin-1.0.0.js", qqapi = "//open.mobile.qq.com/sdk/qqapi.js?_bid=152", qzapi = "//qzonestyle.gtimg.cn/qzone/phone/m/v4/widget/mobile/jsbridge.js?_bid=339";
+  var wxapi = "//res.wx.qq.com/ope../jweixin-1.0.0.js", qqapi = "//open.mobile.qq.com/sdk/qqapi.js?_bid=152", qzapi = "//qzonestyle.gtimg.cn/qzone/phone/../widget/mobile/jsbridge.js?_bid=339";
   var require;
   function _require(url, onload) {
     var doc = document;

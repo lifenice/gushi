@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"./../libs"
-	"./../models"
+	"../libs"
+	"../models"
 	"github.com/astaxie/beego"
 )
 

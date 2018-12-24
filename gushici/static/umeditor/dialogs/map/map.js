@@ -20,9 +20,9 @@
             "<table>" +
             "<tr>" +
             "<td><%=lang_city%>:</td>" +
-            "<td><input class=\"edui-map-city\" type=\"text\" value=\"<%=city.value%>\"/></td>" +
+            "<td><input class=\"edui-map-city\" type=\"text\" value=\"<%=city.value%>\../td>" +
             "<td><%=lang_address%>:</td>" +
-            "<td><input class=\"edui-map-address\" type=\"text\" value=\"\" /></td>" +
+            "<td><input class=\"edui-map-address\" type=\"text\" value=\"\"../td>" +
             "<td><a class=\"edui-map-button\"><%=lang_search%></a></td>" +
             "<td><label class=\"edui-map-dynamic-label\"><input class=\"edui-map-dynamic\" type=\"checkbox\" name=\"edui-map-dynamic\" /><span><%=lang_dynamicmap%></span></label></td>"+
             "</tr>" +

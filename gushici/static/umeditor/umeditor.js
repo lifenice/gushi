@@ -528,7 +528,7 @@ var utils = UM.utils = {
             };
 
         return function (cssName) {
-            return cache[cssName] || (cache[cssName] = cssName.toLowerCase().replace(/-./g, function (match) {
+            return cache[cssName] || (cache[cssName] = cssName.toLowerCase().replace../g, function (match) {
                 return match.charAt(1).toUpperCase();
             }));
         };
@@ -3466,11 +3466,11 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
                     options.initialFrameHeight = options.minFrameHeight = $(container).height() || UM.defaultHeight;
                 }
 
-                container.style.width = /%$/.test(options.initialFrameWidth) ?  '100%' : options.initialFrameWidth -
+                container.style.width =../.test(options.initialFrameWidth) ?  '100%' : options.initialFrameWidth -
                     getStyleValue("padding-left")-
                     getStyleValue("padding-right")  +'px';
 
-                var height = /%$/.test(options.initialFrameHeight) ?  '100%' : (options.initialFrameHeight - getStyleValue("padding-top")- getStyleValue("padding-bottom") );
+                var height =../.test(options.initialFrameHeight) ?  '100%' : (options.initialFrameHeight - getStyleValue("padding-top")- getStyleValue("padding-bottom") );
                 if(this.options.autoHeightEnabled){
                     container.style.minHeight = height +'px';
                     container.style.height = '';
@@ -3726,7 +3726,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
             var reg = new RegExp(domUtils.fillChar, 'g'),
                 html = this.body.innerHTML.replace(/[\n\r]/g, '');//ie要先去了\n在处理
             html = html.replace(/<(p|div)[^>]*>(<br\/?>|&nbsp;)<\/\1>/gi, '\n')
-                .replace(/<br\/?>/gi, '\n')
+                .replace(/<br../gi, '\n')
                 .replace(/<[^>/]+>/g, '')
                 .replace(/(\n)?<\/([^>]+)>/g, function (a, b, c) {
                     return dtd.$block[c] ? '\n' : b ? b : '';
@@ -4352,11 +4352,11 @@ var filterWord = UM.filterWord = function () {
                 }
             })
             //针对wps添加的多余标签处理
-            .replace(/<\/?div[^>]*>/g,'')
+            .replace../?div[^>]*>/g,'')
             //去掉多余的属性
             .replace( /v:\w+=(["']?)[^'"]+\1/g, '' )
             .replace( /<(!|script[^>]*>.*?<\/script(?=[>\s])|\/?(\?xml(:\w+)?|xml|meta|link|style|\w+:\w+)(?=[\s\/>]))[^>]*>/gi, "" )
-            .replace( /<p [^>]*class="?MsoHeading"?[^>]*>(.*?)<\/p>/gi, "<p><strong>$1</strong></p>" )
+            .replace( /<p [^>]*class="?MsoHeading"?[^>]*>(.*?)<../gi, "<p><strong>$1</strong></p>" )
             //去掉多余的属性
             .replace( /\s+(class|lang|align)\s*=\s*(['"]?)([\w-]+)\2/ig, function(str,name,marks,val){
                 //保留list的标示
@@ -5784,7 +5784,7 @@ UM.commands['insertimage'] = {
                     (ci.height ? ' height="' + ci.height + '" ' : '') +
                     ' style="' + (ci['floatStyle'] && ci['floatStyle'] != 'center' ? 'float:' + ci['floatStyle'] + ';' : '') +
                     (ci.border || '') + '" ' +
-                    (ci.title ? ' title="' + ci.title + '"' : '') + ' /></p>';
+                    (ci.title ? ' title="' + ci.title + '"' : '') + '../p>';
                 html.push(str);
             }
         }
@@ -5938,7 +5938,7 @@ UM.plugins['font'] = function () {
                                 '24':'5',
                                 '32':'6',
                                 '48':'7'
-                            }[(value+"").replace(/px/,'')]
+                            }[(value+"").replace../,'')]
                         }
                         this.document.execCommand(fonts[cmdName],false, value);
                         if(browser.gecko){
@@ -5979,7 +5979,7 @@ UM.plugins['font'] = function () {
                     if(val === undefined){
                         val = $(start).attr(cmdNameToAttr[cmdName])
                     }
-                    return val ? utils.fixColor(cmdName,val).replace(/px/,'') : '';
+                    return val ? utils.fixColor(cmdName,val).replace../,'') : '';
                 },
                 queryCommandState: function (cmdName) {
                     return this.queryCommandValue(cmdName)
@@ -6465,7 +6465,7 @@ UM.plugins['undo'] = function () {
     };
 
     var keys = {
-            //  /*Backspace*/ 8:1, /*Delete*/ 46:1,
+            ../*Backspace*/ 8:1, /*Delete*/ 46:1,
             /*Shift*/ 16:1, /*Ctrl*/ 17:1, /*Alt*/ 18:1,
             37:1, 38:1, 39:1, 40:1
 
@@ -6621,7 +6621,7 @@ UM.plugins['paste'] = function () {
                 for (var i = 0, bi; bi = brs[i++];) {
                     var pN = bi.parentNode;
                     if (pN.tagName == 'DIV' && pN.childNodes.length == 1) {
-                        pN.innerHTML = '<p><br/></p>';
+                        pN.innerHTML = '<p><b../p>';
                         domUtils.remove(pN);
                     }
                 }
@@ -7306,7 +7306,7 @@ UM.plugins['video'] = function (){
                 ' src="' + me.options.UMEDITOR_HOME_URL+'themes/default/images/spacer.gif" style="background:url('+me.options.UMEDITOR_HOME_URL+'themes/default/images/videologo.gif) no-repeat center center; border:1px solid gray;'+(align ? 'float:' + align + ';': '')+'" />'
 
                 :
-                '<embed type="application/x-shockwave-flash" class="edui-faked-video" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
+                '<embed type="application/x-shockwave-flash" class="edui-faked-video" pluginspage="http://www.macromedia.co../getflashplayer"' +
                 ' src="' + url + '" width="' + width  + '" height="' + height  + '"'  + (align ? ' style="float:' + align + '"': '') +
                 ' wmode="transparent" play="true" loop="false" menu="false" allowscriptaccess="never" allowfullscreen="true" >';
     }
@@ -8253,11 +8253,11 @@ UM.plugins.xssFilter = function() {
 (function ($) {
     //对jquery的扩展
     $.parseTmpl = function parse(str, data) {
-        var tmpl = 'var __p=[],print=function(){__p.push.apply(__p,arguments);};' + 'with(obj||{}){__p.push(\'' + str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/<%=([\s\S]+?)%>/g,function (match, code) {
+        var tmpl = 'var __p=[],print=function(){__p.push.apply(__p,arguments);};' + 'with(obj||{}){__p.push(\'' + str.replace../g, '\\\\').replace(/'/g, "\\'").replace(/<%=([\s\S]+?)%>/g,function (match, code) {
             return "',obj." + code.replace(/\\'/g, "'") + ",'";
         }).replace(/<%([\s\S]+?)%>/g,function (match, code) {
                 return "');" + code.replace(/\\'/g, "'").replace(/[\r\n\t]/g, ' ') + "__p.push('";
-            }).replace(/\r/g, '\\r').replace(/\n/g, '\\n').replace(/\t/g, '\\t') + "');}return __p.join('');";
+            }).replace../g, '\\r').replace../g, '\\n').replace../g, '\\t') + "');}return __p.join('');";
         var func = new Function('obj', tmpl);
         return data ? func(data) : func;
     };
@@ -10048,7 +10048,7 @@ UM.registerUI('bold italic redo undo underline strikethrough superscript subscri
 
             //还原CSS表达式
             var options = this.editor.options,
-                height = /%$/.test(options.initialFrameHeight) ?  '100%' : (options.initialFrameHeight - this.getStyleValue("padding-top")- this.getStyleValue("padding-bottom") - this.getStyleValue('border-width'));
+                height =../.test(options.initialFrameHeight) ?  '100%' : (options.initialFrameHeight - this.getStyleValue("padding-top")- this.getStyleValue("padding-bottom") - this.getStyleValue('border-width'));
 
             $.IE6 && this.getEditorHolder().style.setExpression('height', 'this.scrollHeight <= ' + height + ' ? "' + height + 'px" : "auto"');
 

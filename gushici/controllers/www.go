@@ -6,7 +6,7 @@
 package controllers
 
 import (
-	"./../models"
+	"../models"
 	"fmt"
 	"github.com/astaxie/beego"
 	"time"

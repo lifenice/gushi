@@ -9,7 +9,7 @@
             if (url.length <= 0) {
                 return false;
             }
-            if (url.search(/http:\/\/|https:\/\//) !== 0) {
+            if (url.search(/http:\/\/|https:../) !== 0) {
                 url += 'http://';
             }
 
@@ -169,7 +169,7 @@
         render: function (sel, t) {
             var me = this;
 
-            $(sel, me.dialog).append($(me.uploadTpl.replace(/%%/g, t)));
+            $(sel, me.dialog).append($(me.uploadTpl.replace../g, t)));
 
             return me;
         },
