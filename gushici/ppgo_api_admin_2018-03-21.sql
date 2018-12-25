@@ -1118,10 +1118,8 @@ LOCK TABLES `pp_uc_admin` WRITE;
 
 INSERT INTO `pp_uc_admin` (`id`, `login_name`, `real_name`, `password`, `role_ids`, `phone`, `email`, `salt`, `last_login`, `last_ip`, `status`, `create_id`, `update_id`, `create_time`, `update_time`)
 VALUES
-	(1,'admin','超级管理员','e181705f8e9a695298be6282581a3a72','0','13888888889','haodaquan2008@163.com','kmcB',1517993417,'[',1,0,0,0,1506128438),
-	(2,'george518','georgeHao','e5d77ebaffd5e4fe7164b31c6d7f1921','1,2','13811558899','12@11.com','ONNy',1506125048,'127.0.0.1',1,0,0,0,1506128425),
-	(3,'haodaquan','郝大全','e9fa9187e7497892c237433aee966cc1','2,1','13811559988','hao@123.com','6fWE',1505960085,'127.0.0.1',1,1,0,1505919245,1506128414),
-	(4,'ceshizhanghao','测试姓名','fa3fb5825c2e64bc764f29245dd1ec7a','2','13988009988','232@124.com','i8Nf',0,'',1,1,0,1506047337,1506128397);
+	(1,'admin','超级管理员','7488e331b8b64e5794da3fa4eb10ad5d','0','13888888889','joezou@tencent.com','12345',1517993417,'[',1,0,0,0,1506128438),
+	(2,'george518','georgeHao','e5d77ebaffd5e4fe7164b31c6d7f1921','1,2','13811558899','12@11.com','ONNy',1506125048,'127.0.0.1',1,0,0,0,1506128425);
 
 /*!40000 ALTER TABLE `pp_uc_admin` ENABLE KEYS */;
 UNLOCK TABLES;
