@@ -15,3 +15,7 @@ variables:
 steps:
 - script:  docker build -t $(imageName) .
   displayName: 'docker build and push'
+  docker login --username=3321337994 -p Isd12345 hub.tencentyun.com
+  displayName: 'docker login'
+  docker push $(imageName)
+  displayName: 'docker push'
