@@ -13,5 +13,12 @@ variables:
   imageName: 'hub.tencentyun.com/joezou/gushici:$(build.buildId)'
 
 steps:
-- script: docker build -f Dockerfile -t $(imageName) .
-  displayName: 'docker build'
+
+- script: docker login --username=3321337994 -p Isd12345 hub.tencentyun.com .
+  displayName: 'docker loing'
+
+- script: |
+  docker login --username=3321337994 -p Isd12345 hub.tencentyun.com
+  docker build -f Dockerfile -t $(imageName) .
+  docker push $(imageName)
+  displayName: 'docker build and push'
