@@ -18,7 +18,7 @@ steps:
   displayName: 'docker loing'
 
 - script: |
+  docker build -t $(imageName) .
   docker login --username=3321337994 -p Isd12345 hub.tencentyun.com
-  docker build -f Dockerfile -t $(imageName) .
   docker push $(imageName)
   displayName: 'docker build and push'
