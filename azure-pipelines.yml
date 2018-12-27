@@ -13,5 +13,4 @@ variables:
   imageName: 'hub.tencentyun.com/joezou/gushici:$(build.buildId)'
 
 steps:
-- script: |
-  docker build -t $(imageName) .
+- script:  docker build -t $(imageName) .
