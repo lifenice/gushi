@@ -14,8 +14,6 @@ variables:
 
 steps:
 
-- script: docker login --username=3321337994 -p Isd12345 hub.tencentyun.com .
-  displayName: 'docker loing'
 
 - script: |
   docker build -t $(imageName) .
