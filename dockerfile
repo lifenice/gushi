@@ -5,7 +5,7 @@ WORKDIR /gushici
 #RUN echo $GOPATH > /gushici/build.file
 RUN go get github.com/astaxie/beego \
     && go get github.com/go-sql-driver/mysql
-RUN GOPATH="$GOPATH;/tmp" CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GOARM=6 go build  -o gushici
+RUN go build  -o gushici
 #RUN echo $GOARCH >> /gushici/build.file
 
 RUN mkdir -p /tmp/gushici \
