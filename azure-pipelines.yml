@@ -1,0 +1,23 @@
+# Docker image
+# Build a Docker image to deploy, run, or push to a container registry.
+# Add steps that use Docker Compose, tag images, push to a registry, run an image, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  imageName: 'hub.tencentyun.com/joezou/gushici:$(build.buildId)'
+
+steps:
+- script:  docker build -t $(imageName) .
+  displayName: 'docker build and push'
+
+- script: docker login --username=3321337994 -p Isd12345 hub.tencentyun.com
+  displayName: 'docker login'
+  
+- script: docker push $(imageName)
+  displayName: 'docker push'
